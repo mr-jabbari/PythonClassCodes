@@ -59,21 +59,21 @@ fruits = ["apple", "banana", "orange", "grape"]
 # print(fruits[0])
 #
 # # slice the list from index 1 to 3 (exclusive)
-print(fruits[1:3])
+# print(fruits[1:3])
 #
 # # append a new item to the end of the list
 # fruits.append("mango")
+# fruits[0] = "banana"
 # print(fruits)
 #
 # # remove the last item from the list
-# fruits.pop()
+# fruits.pop(0)
 # print(fruits)
-#
-#
-#
+
+
 # # tuple
 # # create a tuple of colors
-# colors = ("red", "green", "blue")
+# colors = ("red", "green", "blue", "red")
 #
 # # access the second item
 # print(colors[1])
@@ -83,16 +83,18 @@ print(fruits[1:3])
 #
 # # try to change the first item
 # colors[0] = "pink"
-#
-#
-#
+# print(colors)
+
+
+
+
 # # set
 # # create a set of odd numbers
 # odd = {1, 3, 5, 7, 9}
 #
 # # create a set of even numbers
 # even = set([2, 4, 6, 8, 10])
-#
+# #
 # # find the union of two sets
 # print(odd | even)
 #
@@ -101,16 +103,21 @@ print(fruits[1:3])
 #
 # # find the difference of two sets
 # print(odd - even)
-#
-# # check if an item is in a set
+# #
+# # # check if an item is in a set
 # print(3 in odd)
 # print(3 in even)
-#
-#
-# # dictionary
-# # create a dictionary of countries and their capitals
-# countries = {"France": "Paris", "Japan": "Tokyo", "India": "New Delhi"}
-#
+
+
+
+
+# dictionary
+# create a dictionary of countries and their capitals
+# countries = {"France": "Paris",
+#              "Japan": "Tokyo",
+#              "India": "New Delhi",
+#              "Iran": "Tehran"}
+
 # # access the value of a key
 # print(countries["France"])
 #
@@ -129,6 +136,26 @@ print(fruits[1:3])
 
 
 
+# user_1 = {
+#     "name": "Gholi",
+#     "age": 25,
+#     "followers": 255,
+#     "admin": True,
+#     "brothers": ["reza","ali"]
+# }
+# print(user_1.keys())
+# print(user_1.values())
+# if user_1["admin"]:
+#     print("you have access")
+
+
+
+# matrix = [
+#     [0,1,0],
+#     {"age":[25,28,"Ali"]},
+#     [0,1,0],
+# ]
+# print(matrix[1]["age"][1])
 
 
 
@@ -137,12 +164,20 @@ print(fruits[1:3])
 
 
 
-# # for
-# # create a list of numbers
+
+
+
+
+
+
+
+# for
+# create a list of numbers
 # numbers = [1, 2, 3, 4, 5]
-#
+# #
 # # use a for loop to print each number
 # for num in numbers:
+#     # print("hi")
 #     print(num)
 #
 # # create a string
@@ -152,34 +187,49 @@ print(fruits[1:3])
 # for char in word:
 #     print(char)
 #
-# # use a range to generate a sequence of numbers from 1 to 10 (exclusive)
+# print(list(range(3,10,2)))
+# use a range to generate a sequence of numbers from 1 to 10 (exclusive)
 # for i in range(1, 11):
 #     print(i)
+
 #
-#
-#
-# # while
+# small_num = int(input("enter smaller number: "))
+# big_num = int(input("enter bigger number: "))
+# if small_num>big_num:
+#     small_num,big_num = big_num,small_num
+# count = 0
+# for i in range(small_num,big_num+1):
+#     count = count + i
+# print(f"your count is: {count}")
+
+
+
+
+
+
+
+
+## while
 # # initialize a counter
 # i = 1
-#
 # # use a while loop to print the numbers from 1 to 10
 # while i <= 10:
 #     print(i)
 #     # increment the counter by 1
-#     i = i + 1
-#
-# # define a password
-# password = "secret"
-#
-# # ask the user to enter a password
-# user_input = input("Enter the password: ")
-#
-# # use a while loop to check if the password is correct
-# while user_input != password:
-#     # print a message
-#     print("Wrong password. Try again.")
-#     # ask the user to enter a password again
-#     user_input = input("Enter the password: ")
-#
-# # print a message
-# print("Correct password. You are logged in.")
+#     i += 1
+
+# define a password
+password = "secret"
+
+# ask the user to enter a password
+user_input = input("Enter the password: ")
+
+# use a while loop to check if the password is correct
+while user_input != password:
+    # print a message
+    print("Wrong password. Try again.")
+    # ask the user to enter a password again
+    user_input = input("Enter the password: ")
+
+# print a message
+print("Correct password. You are logged in.")
