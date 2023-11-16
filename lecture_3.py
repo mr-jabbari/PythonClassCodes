@@ -23,7 +23,6 @@ lecture overview:
 
 
 
-
 # # rage()
 # # use a range() function to create a sequence of numbers from 1 to 10 (inclusive) with a step of 2
 # numbers = range(1, 11, 2)
@@ -46,23 +45,21 @@ lecture overview:
 #
 # # convert the object to a list of tuples
 # print(list(fruits_with_index))
-#
-#
-#
-#
 
 
 
 
-# # list
+
+
+
+## list
 # # create a list of fruits
-# fruits = ["apple", "banana", "orange", "grape"]
-#
+fruits = ["apple", "banana", "orange", "grape"]
 # # access the first item
 # print(fruits[0])
 #
 # # slice the list from index 1 to 3 (exclusive)
-# print(fruits[1:3])
+print(fruits[1:3])
 #
 # # append a new item to the end of the list
 # fruits.append("mango")
