@@ -32,22 +32,6 @@ lecture overview:
 #
 # # convert the object to a list
 # print(list(numbers))
-#
-# # create a list of fruits
-# fruits = ["apple", "banana", "orange", "grape"]
-#
-# # enumerate()
-# # use an enumerate() function to add a counter to the list
-# fruits_with_index = enumerate(fruits)
-#
-# # print the type of the object
-# print(type(fruits_with_index))
-#
-# # convert the object to a list of tuples
-# print(list(fruits_with_index))
-
-
-
 
 
 

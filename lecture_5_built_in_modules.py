@@ -92,7 +92,7 @@ import json  #  https://docs.python.org/3/library/json.html#module-json
 #     ['David', '40', 'UK']
 # ]
 
-filename = 'example.csv'
+filename = 'lecture_5.csv'
 
 # with open(filename, 'w', newline='') as csvfile:
 #     writer = csv.writer(csvfile)
