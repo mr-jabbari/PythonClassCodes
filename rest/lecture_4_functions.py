@@ -1,8 +1,21 @@
-from lecture_4 import add
-from lecture_4.greeting import greet, greet_2
 """
     this lecture is for functions
 """
+
+def add(num1, num2):
+    print(num1+num2)
+
+
+# Defines a function named 'greet' that prints a greeting.
+def greet(name):
+    return f"Hello, {name}!"
+
+
+# Defines a function with a default parameter.
+def greet_2(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+
 
 
 # Uses the function 'greet' with the argument 'Alice'.

@@ -23,6 +23,8 @@ lecture overview:
             action
         else:
             action
+
+    break, continue, pass
 """
 
 # example

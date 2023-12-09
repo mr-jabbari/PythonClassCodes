@@ -7,6 +7,7 @@ import string
 # # Read the CSV file
 # df = pd.read_csv('lecture_6.csv')
 #
+# # print(df)
 #
 # def add_user(username: str, birth_year: int, gender, income, password=None):
 #     new_row = {
@@ -103,15 +104,15 @@ df = pd.read_csv('lecture_6_exam.csv')
 
 print(df)
 
-# # Calculate basic statistics for both subjects
-# stats = df[['math', 'english']].describe()
-#
-# # Print the statistics
-# print(stats)
+# Calculate basic statistics for both subjects
+stats = df[['math', 'english']].describe()
+
+# Print the statistics
+print(stats)
 
 
 # Create a bar plot for the scores
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(20, 12))
 width = 0.35  # the width of the bars
 indices = df['index']  # the x locations for the groups
 

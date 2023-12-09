@@ -7,7 +7,6 @@ import csv  #  https://docs.python.org/3/library/csv.html#module-csv
 import json  #  https://docs.python.org/3/library/json.html#module-json
 
 
-
 # math
 # print(math.pi)                 # Outcome: 3.141592653589793
 # print(sin(math.pi / 2))   # Outcome: 1.0
